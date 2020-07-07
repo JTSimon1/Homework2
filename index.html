@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+
+</head>
+<body>
+    <div class="container">
+        <!-- made a container so I could style the generator easily -->
+        <h1 class='title'>Password Generator</h1>
+        <!-- this is to be displayed at the top of the Password Generator -->
+        <h3 class='password-display' id='passwordDisplay'>Password</h3>
+        <!-- password is a place holder and is to be rewritten after the generate button has been pressed -->
+        <form id = 'passwordGenerator' class='form'> 
+            <!-- I created a form so I could add labels and buttons to my password generator -->
+
+            <div class='character-amount-container'>
+                <label for="">Number of Characters</label>
+                <input type="range" value="10" min="1" max="50" id="characterAmountRange">
+                
+                <input type="number" value="10" min="1" max="50" id="characterAmountNumber">
+            </div>
+
+            <label for="">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+
+            <label for="">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+
+            <label for="">Include Special Characters</label>
+            <input type="checkbox" id="includeSpecial">
+
+            <button type="submit">Generate Password</button>
+
+            <!-- These are the criteria that are to be selected before generating a password -->
+
+        </form>
+    </div>
+    
+</body>
+</html>
